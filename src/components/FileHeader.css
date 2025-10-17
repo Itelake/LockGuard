@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300..500&display=swap');
+
+.fileHeader {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #334456;
+  padding-bottom: 30px;
+}
+
+.fileName {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10%;
+  width: 80%;
+  margin-bottom: -2px;
+}
+
+.fileName img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px; 
+  user-select: none;
+}
+
+.filePathWrapper {
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Roboto Slab",serif;
+  font-weight: 300;
+}
+
+.filePath {
+  padding-left: 8px;
+  user-select: none;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+.filePathEncrypted {
+  padding-left: 0px;
+  user-select: none;
+}
+
+#fileIcon::before {
+  font-size: 20px;
+}

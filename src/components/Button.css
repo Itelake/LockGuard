@@ -1,0 +1,26 @@
+.primaryButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background-color: #334456;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.primaryButton:hover {
+  opacity: 0.75;
+}
+
+.secondaryButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  padding-top: 15px;
+}

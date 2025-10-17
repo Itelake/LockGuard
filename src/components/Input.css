@@ -1,0 +1,44 @@
+.inputBar {
+  width: 80%;
+  height: 50px;
+  margin-top: 15px; /* Установите начальное значение margin-top */
+  border: none;
+  border-radius: 5px;
+  background-color: #363a44;
+  padding-left: 10px;
+  color: #ffffff;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.inputBar.decription {
+  margin-top: 55px; /* Установите значение margin-top для случая дешифрования */
+  user-select: none;
+}
+
+.inputBarError {
+  width: 80%;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #868c9d;
+  padding-left: 10px;
+  color: #ff6978;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.inputBar::placeholder {
+  color: #c1c4cd;
+}
+
+.inputBarError::placeholder {
+  color: #c1c4cd;
+}
+
+

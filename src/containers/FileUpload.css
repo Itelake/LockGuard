@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300..500&display=swap');
+
+.fileUpload {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 62%;
+  height: 119px;
+  border-radius: 10px;
+  color: #ffffff; 
+}
+
+.fileUploadIcon {
+  height: 45px;
+  width: 150px;
+  opacity: 0.8;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  position: relative;
+  left: 60px;
+  margin-top: 30px;
+  user-select: none;
+}
+
+.fileUploadIcon:hover {
+  opacity: 1;
+}
+
+.HelpButton {
+  position: absolute;
+  bottom: 50px; /* Располагаем кнопку внизу */
+  right: 10px;
+  height: 35px;
+  width: 35px;
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transition: opacity 0.3s;
+  user-select: none;
+}
+
+.HelpButton:hover {
+  opacity: 1;
+}
+
+.InfoButton {
+  position: absolute;
+  bottom: 91px; /* Располагаем кнопку внизу */
+  right: 10px;
+  height: 35px;
+  width: 35px;
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transition: opacity 0.3s;
+  user-select: none;
+}
+
+.InfoButton:hover {
+  opacity: 1;
+}
+
+.languageButton {
+  position: absolute;
+  bottom: 35px; /* Переместим кнопку чуть выше */
+  left: 10px;
+  opacity: 0.8;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px; /* Уменьшим внутренние отступы */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+}
+
+.languageButton:hover {
+  opacity: 1;
+}
+
+.exitButton {
+  position: absolute;
+  bottom: 10px; /* Располагаем кнопку внизу */
+  right: 10px;
+  height: 35px;
+  width: 35px;
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transition: opacity 0.3s;
+  user-select: none;
+}
+
+li {
+  text-align: justify;
+}
+
+.exitButton:hover {
+  opacity: 1;
+}
+
+/* Стили для текста в блоке developerInfo */
+.developerInfo {
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  margin-bottom: auto; /* Размещаем информацию о разработчике вверху */
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  user-select: none;
+  font-variation-settings:
+    "wdth" 100;
+    line-height: 2.1;
+}
+
+.authorInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Выравниваем по вертикали */
+  height: 100%;
+}
+
+.authorName {
+  position: absolute;
+  left: 45px; /* Располагаем слева */
+  user-select: none;
+}
+
+.authorGroup {
+  position: absolute;
+  right: 45px; /* Располагаем справа */
+  user-select: none;
+}
+
+.info {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  margin-bottom: auto; /* Размещаем информацию о разработчике вверху */
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  user-select: none;
+  font-variation-settings:
+    "wdth" 100;
+    
+}
+
+.info img{
+    display: block;
+    margin: 0 auto 10px;
+    margin-top: 15px;
+}
+
+.imgtitle {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  align-items: center;
+  font-size: 42px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  user-select: none;
+}
+
+.logotitle {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  user-select: none;
+}
+
+
+.developerInfo img {
+  display: block;
+  margin: 0 auto 10px;
+  margin-top: 35px;
+}
+
+.developerInfo > div {
+  display: flex;
+  text-align: center;
+  margin-bottom: 10px;
+  flex-direction: column; /* Располагаем текст в столбец */
+  align-items: center;
+  user-select: none;
+}
+
+.shortHR {
+  width: 70%;
+  border-width: 1px; /* Измените значение толщины линии по вашему усмотрению */
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.BackButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Размещаем кнопку внизу */
+  position: absolute;
+  bottom: 10px;
+  left: 50%; /* Перемещаем в центр */
+  transform: translateX(-50%); /* Центрируем относительно родительского контейнера */
+  width: fit-content; /* Ширина кнопки будет соответствовать её содержимому */
+  padding: 5px 10px; /* Добавим немного отступов */
+}
+
+.BackButtonText {
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 24px;
+  background-color: transparent;
+  font-weight: 500;
+  border: none; /* Убираем рамку у кнопки */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none; /* Убираем подчеркивание */
+  margin-bottom: 10px;
+}
+
+.BackButtonText:hover {
+  opacity: 1;
+}
+
+
+.fileUploadText {
+  padding-top: 130px;
+  text-align: center;
+  /* font-family: ; */
+  font-size: 24px;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  position: relative;
+  left: 60px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.versionButton { /* Цвет версии */
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0.8;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+}
+
+.versionButton:hover {
+  opacity: 1;
+}
+
+.lockguardIcon {
+  text-align: center;
+  position: absolute;
+  margin-top: 20px;
+  height: 650px;
+  display: block;
+  color: #ffffff;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom: 80px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+}
+
+.lockguardTitle {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px; 
+  user-select: none;
+}
+
+.developerInfomation img {
+  display: block;
+  margin: 0 auto 10px;
+  margin-top: 35px;
+}
+
+.developerInfomation > div {
+  display: flex;
+  text-align: left;
+  margin-bottom: 10px;
+  flex-direction: column; /* Располагаем текст в столбец */
+  align-items: center;
+  user-select: none;
+}
+
+.developerInfomation {
+  color: #ffffff;
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  margin-bottom: auto; /* Размещаем информацию о разработчике вверху */
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  user-select: none;
+  font-variation-settings:
+    "wdth" 100;
+    line-height: 2.1;
+}
+
+.versionScroll {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  width: 95%;
+  overflow-y: scroll; /* Показываем скроллбар всегда */
+  scrollbar-width: thin; /* Ширина скроллбара */
+  scrollbar-color: transparent transparent; /* Цвет скроллбара */
+  max-height: 360px;
+}
+
+
+.versionScroll::-webkit-scrollbar {
+  width: 5px; /* Ширина скроллбара */
+}
+
+.versionScroll:hover::-webkit-scrollbar-thumb {
+  background-color: #888; /* Цвет ползунка скроллбара при наведении */
+}
+
+.versionScroll:hover::-webkit-scrollbar-thumb {
+  background-color: #888; /* Цвет ползунка скроллбара при наведении */
+}
+
+.versionScroll::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Прозрачный цвет ползунка скроллбара по умолчанию */
+}
+.versionNumber {
+  margin-left: 20px;
+  line-height: 0px;
+  margin-top: -5px;
+  margin-bottom: -20px;
+}
+
+.HelpScroll {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left !important;
+  width: 95%;
+  overflow-y: scroll; /* Показываем скроллбар всегда */
+  scrollbar-width: thin; /* Ширина скроллбара */
+  scrollbar-color: transparent transparent; /* Цвет скроллбара */
+  max-height: 360px;
+  margin-left: 20px;
+}
+
+
+.HelpScroll::-webkit-scrollbar {
+  width: 5px; /* Ширина скроллбара */
+}
+
+.HelpScroll:hover::-webkit-scrollbar-thumb {
+  background-color: #888; /* Цвет ползунка скроллбара при наведении */
+}
+
+.HelpScroll:hover::-webkit-scrollbar-thumb {
+  background-color: #888; /* Цвет ползунка скроллбара при наведении */
+}
+
+.HelpScroll::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Прозрачный цвет ползунка скроллбара по умолчанию */
+}
+
+.ImgHelp {
+  text-align: center;
+  align-items: center;
+}
+
+.TextHelp {
+  text-align: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+
+
+
+
+

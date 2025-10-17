@@ -1,0 +1,73 @@
+{
+  "name": "lockguard",
+  "version": "1.0.0",
+  "description": "My Project.",
+  "license": "MIT",
+  "author": "Iskak Islam <islam.iskak2001@gmail.com>",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IskakCS102/LockGuard.git"
+  },
+  "build": {
+    "appId": "org.alichtman.LockGuard",
+    "productName": "LockGuard",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "build/icon.png"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "linux": {
+      "target": "deb",
+      "category": "Utility"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "build/favicon.ico" 
+    }
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0",
+    "file-icons-js": "github:websemantics/file-icons-js",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-lottie": "^1.2.3",
+    "react-scripts": "^5.0.0"
+  },
+  "scripts": {
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "dist": "electron-builder -w",
+    "eject": "react-scripts eject",
+    "electron-pack": "build --em.main=build/electron.js",
+    "electron-start": "electron . --inspect=5858",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps",
+    "preelectron-pack": "yarn build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "electron": "^17.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
