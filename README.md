@@ -121,7 +121,7 @@ lockguard/
 
 ```bash
 # 1. Клонировать репозиторий
-git clone https://github.com/IskakCS102/LockGuard.git
+git clone https://github.com/Itelake/LockGuard.git
 cd LockGuard
 
 # 2. Установить зависимости
