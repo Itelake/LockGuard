@@ -1,5 +1,5 @@
 #!/bin/bash
-# deadbolt release process
+# LockGuard release process
 
 set -e
 
@@ -52,12 +52,13 @@ if [ "$bump" != "NONE" ]; then
 fi
 
 # Build electron app for Linux, Windows and macOS
-
-npm run preelectron-pack && npm run dist
+export NODE_OPTIONS=--openssl-legacy-provider
+npm run build && npm run dist
 
 # Push new releases to GitHub
-hub release create -a "dist/Deadbolt-${new_version}-mac.zip" -a "dist/Deadbolt ${new_version}.exe" -a "dist/deadbolt_${new_version}_amd64.deb" -m "deadbolt v${new_version}" "${new_version}"
-
-# Homebrew
-
-echo -e "Make sure to update the Homebrew tap with the new release.\n"
+gh release create "v${new_version}" \
+  "dist/LockGuard Setup ${new_version}.exe" \
+  "dist/LockGuard-${new_version}.dmg" \
+  "dist/lockguard_${new_version}_amd64.deb" \
+  --title "LockGuard v${new_version}" \
+  --notes "LockGuard v${new_version}"

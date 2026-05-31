@@ -1,17 +1,17 @@
 {
   "name": "lockguard",
   "version": "1.0.0",
-  "description": "My Project.",
+  "description": "Cross-platform file encryption app using AES-256-GCM.",
   "license": "MIT",
-  "author": "Iskak Islam <islam.iskak2001@gmail.com>",
+  "author": "Itelake",
   "main": "public/electron.js",
   "homepage": "./",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IskakCS102/LockGuard.git"
+    "url": "https://github.com/Itelake/LockGuard.git"
   },
   "build": {
-    "appId": "org.alichtman.LockGuard",
+    "appId": "com.itelake.LockGuard",
     "productName": "LockGuard",
     "files": [
       "build/**/*",
@@ -27,7 +27,7 @@
     },
     "win": {
       "target": "portable",
-      "icon": "build/favicon.ico" 
+      "icon": "build/favicon.ico"
     }
   },
   "dependencies": {
@@ -67,7 +67,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "electron": "^17.0.0",
+    "electron": "^17.4.11",
     "electron-builder": "^24.13.3"
   }
 }

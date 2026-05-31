@@ -305,17 +305,14 @@ export default class FileUpload extends Component {
                         <div className="logotitle">{translation.appDescription}</div>
                     </div>
                     <hr className="shortHR"/>
-                    {translation.information_diplom}<br/>
+                    {translation.information}<br/>
                     {translation.Author_work}<br/>
-                    <div className="authorInfo">
-                    <div className="authorName">Искак И.А.</div>
-                    <div className="authorGroup">CS-302(c)</div> <br/>
-                    </div>
-                    islam.iskak2001@gmail.com
+                    <div style={{textAlign: 'center', userSelect: 'none'}}>Created by Itelake</div>
+                    <div style={{textAlign: 'center', userSelect: 'none'}}>MIT License · Open Source</div>
                     <hr className="shortHR"/>
                     <div>
-                    {translation.diploma}<br/>
-                    Улихина Ю.В.
+                    {translation.github}<br/>
+                    github.com/Itelake/LockGuard
                     </div> 
                     <div className="BackButtonWrapper">
                         <button className="BackButtonText" onClick={this.toggleInfo}>Назад</button>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2_00000016037813525312304760000003664154111560971656_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+	 style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#282828;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#4C545E;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{display:none;fill:#4C545E;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<polygon class="st0" points="84.7,23.5 95.2,34.2 95.2,86.9 4.8,86.9 4.8,13.1 74,13.1 "/>
+<polygon class="st1" points="74,34.2 74,13.1 84.7,23.5 95.2,34.2 "/>
+<path class="st2" d="M39.4,33.2v24.2c-5.6,0.1-7.9,3-7.9,6.6s2.5,7.4,8.2,7.4c3.6,0,6.6-3.8,6.6-7.4c0-0.4,0-0.7,0-0.9l0,0V42.4
+	l12.2-2.3v13.7c-5.6,0.1-7.9,3-7.9,6.6s2.5,7.4,8.2,7.4c3.6,0,6.6-3.8,6.6-7.4c0-0.4,0-0.7,0-0.9v-3.8V28.3L39.4,33.2z"/>
+<rect x="45.3" y="43.7" class="st1" width="52" height="25.9"/>
+<g>
+	<g>
+		<path class="st3" d="M49.8,63.9v-2.1l1.6-0.3V51.2l-1.6-0.3v-2.1h1.6h5.3c1.9,0,3.4,0.3,4.4,1c1.1,0.7,1.6,1.7,1.6,3.1
+			c0,0.7-0.2,1.4-0.5,1.9c-0.3,0.6-0.9,1-1.6,1.3c0.6,0.1,1.1,0.4,1.5,0.7c0.4,0.3,0.7,0.7,0.8,1.1c0.2,0.4,0.3,0.9,0.3,1.4
+			c0,1.5-0.5,2.6-1.5,3.4s-2.4,1.1-4.3,1.1H49.8z M55,55h1.5c0.9,0,1.5-0.1,1.9-0.4c0.4-0.3,0.6-0.7,0.6-1.3c0-0.6-0.2-1.1-0.6-1.4
+			c-0.4-0.3-1-0.4-1.8-0.4H55V55z M55,61.1h2.4c0.7,0,1.3-0.1,1.6-0.4s0.5-0.7,0.5-1.3c0-0.7-0.2-1.1-0.5-1.5
+			c-0.3-0.3-0.8-0.5-1.5-0.5H55V61.1z"/>
+		<path class="st3" d="M63.7,63.9v-2.1l1.1-0.2l4.5-12.8h3.9l4.5,12.8l1.1,0.2v2.1h-5.6v-2.1l1-0.2l-0.5-1.6h-4.9l-0.4,1.6l1,0.2
+			v2.1H63.7z M69.6,57.4h3.3l-1.5-4.6l-0.2-0.5h-0.1L71,52.9L69.6,57.4z"/>
+		<path class="st3" d="M82.8,63.9v-2.1l1.6-0.3v-9.8H82l-0.1,1.6h-2.7v-4.5h14v4.5h-2.8l-0.1-1.6H88v9.8l1.6,0.3v2.1H82.8z"/>
+	</g>
+</g>
+<g>
+	<polyline class="st4" points="13.9,54.7 20.4,61.1 14.3,67.1 	"/>
+	<line class="st4" x1="26" y1="69.6" x2="38.5" y2="69.6"/>
+</g>
+</svg>

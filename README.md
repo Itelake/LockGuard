@@ -6,9 +6,19 @@
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 Кроссплатформенное десктопное приложение для надёжного шифрования и дешифрования файлов с использованием алгоритма **AES-256-GCM**. Интуитивно понятный интерфейс делает защиту данных доступной для любого пользователя.
+
+---
+
+## 📥 Скачать
+
+Готовые сборки: [Releases](https://github.com/Itelake/LockGuard/releases)
+
+> Windows: `.exe`
+> Linux: `.deb`
+> macOS: `.dmg`
 
 ---
 
@@ -26,6 +36,7 @@
 
 ### 🖥️ Интерфейс
 - Простой и понятный UI, не требующий технических знаний
+- Поддержка языков: Русский, English, Қазақша
 - Работает на Windows, Linux и macOS
 
 ---
@@ -78,7 +89,6 @@
 | **Стили** | HTML5 + CSS3 | Разметка и оформление |
 | **Backend** | Node.js | Обработка файлов |
 | **Шифрование** | Crypto (Node.js built-in) | AES-256-GCM шифрование |
-| **IDE** | Visual Studio Code | Среда разработки |
 
 ---
 
@@ -98,13 +108,16 @@
 
 ```
 lockguard/
+├── public/
+│   └── electron.js         # Electron main process
 ├── src/
-│   ├── main/           # Electron main process (Node.js)
-│   │   └── crypto/     # Логика шифрования/дешифрования
-│   └── renderer/       # React UI
-│       ├── components/ # Компоненты интерфейса
-│       └── styles/     # CSS стили
-├── public/             # Статические ресурсы
+│   ├── components/         # UI компоненты
+│   ├── containers/         # Основные экраны
+│   ├── translations/       # Переводы (RU, EN, KZ)
+│   └── icons/              # Иконки файлов
+├── assets/                 # Иконка приложения
+├── scripts/
+│   └── release.sh          # Скрипт релиза (Linux/macOS)
 ├── package.json
 └── README.md
 ```
@@ -114,10 +127,12 @@ lockguard/
 ## ⚙️ Установка и запуск
 
 ### Требования
-- Node.js 16+
-- npm или yarn
+- Node.js 22.x
+- npm
 
-### Шаги
+> ⚠️ Другие версии Node.js могут не работать корректно.
+
+### Запуск в режиме разработки
 
 ```bash
 # 1. Клонировать репозиторий
@@ -127,22 +142,47 @@ cd LockGuard
 # 2. Установить зависимости
 npm install
 
-# 3. Запустить в режиме разработки
-npm start
-
-# 4. Собрать приложение
+# 3. Собрать React
 npm run build
+
+# 4. Запустить Electron
+npm run electron-start
 ```
+
+### Сборка установщика
+
+**Windows** (CMD или PowerShell):
+```bash
+npm run build
+npm run dist
+```
+Результат: `dist/LockGuard Setup 1.0.0.exe`
+
+**Linux**:
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+npm run build
+npm run dist
+```
+Результат: `dist/lockguard_1.0.0_amd64.deb`
+
+**macOS**:
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+npm run build
+npx electron-builder --mac
+```
+Результат: `dist/LockGuard-1.0.0.dmg`
 
 ---
 
 ## 💡 Использование
 
 1. Запустить LockGuard
-2. Выбрать файл для шифрования / дешифрования
+2. Перетащить файл или выбрать через проводник
 3. Ввести пароль
 4. Нажать **Зашифровать** или **Расшифровать**
-5. Сохранить результат
+5. Готовый файл сохранится рядом с оригиналом
 
 > ⚠️ Запомните пароль — без него восстановление файла невозможно.
 
@@ -150,4 +190,4 @@ npm run build
 
 ## 📄 Лицензия
 
-MIT License
+MIT License © [Itelake](https://github.com/Itelake)
