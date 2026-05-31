@@ -189,4 +189,4 @@ npx electron-builder --mac
 
 ## 📄 Лицензия
 
-MIT License © [Itelake](https://github.com/Itelake)
+MIT License © 
